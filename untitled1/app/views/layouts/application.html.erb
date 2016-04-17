@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Blog</title>
-    <%= csrf_meta_tags %>
-    <%= action_cable_meta_tag %>
+<head>
+  <title>Blog</title>
+  <%= csrf_meta_tags %>
+  <%= action_cable_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <%= stylesheet_link_tag 'templatemo_style.css' %>
-    <script language="javascript" type="text/javascript">
-      function clearText(field)
-      {
-        if (field.defaultValue == field.value) field.value = '';
-        else if (field.value == '') field.value = field.defaultValue;
-      }
-    </script>
-  </head>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <%= stylesheet_link_tag 'templatemo_style.css' %>
+  <script language="javascript" type="text/javascript">
+    function clearText(field) {
+      if (field.defaultValue == field.value) field.value = '';
+      else if (field.value == '') field.value = field.defaultValue;
+    }
+  </script>
+</head>
 
-  <body>
-  <h1>Hello, Rails!</h1>
-  <%= link_to 'My Blog', controller: 'articles' %>
+<body>
+<h1>Hello, Rails!</h1>
+<%= link_to 'My Blog', controller: 'articles' %>
 
-  <div id="templatemo_body_wrapper">
-    <div id="templatemo_wrapper">
-      <%= render partial: 'shared/header', :locals => { :comments => @comments } %>
+<div id="templatemo_body_wrapper">
+  <div id="templatemo_wrapper">
+    <%= render partial: 'shared/header', :locals => {:comments => @comments} %>
 
-      <%= yield %>
+    <div id="templatemo_main">
 
+      <div id="templatemo_content">
+        <%= yield %>
+      </div>
+
+      <div class="cleaner"></div>
     </div>
-    <div class="cleaner"></div>
+
   </div>
+  <div class="cleaner"></div>
+</div>
 
-  <%= render "shared/footer" %>
+<%= render "shared/footer" %>
 
-  </body>
+</body>
 </html>

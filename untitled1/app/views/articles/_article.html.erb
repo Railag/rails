@@ -1,0 +1,17 @@
+<div class="post_box">
+
+
+  <h2><%= link_to "#{article.title}", article_path(article) %></h2>
+  <div class="news_meta">Posted on <%= article.created_at %></div>
+  <div class="image_wrapper">
+    <a href="http://www.templatemo.com/page/1" target="_parent"><%= image_tag("templatemo_image_01.jpg", :alt => "image 1") %></a>
+  </div>
+  <p align="justify">
+    <%= article.text %>
+    <br>
+
+    <%= link_to "Continue..", article_path(article), {:class => 'continue'} %>
+  </p>
+
+  <div class="cleaner"></div>
+</div>
