@@ -3,10 +3,11 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  before_filter :fetch_comments
+  before_filter :fetch_data
 
   protected
-  def fetch_comments
+  def fetch_data
     @comments = Comment.last(25)
+    @articles = Article.order("RAND()").first(5)
   end
 end

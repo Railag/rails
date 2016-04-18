@@ -38,7 +38,8 @@
   <div class="cleaner"></div>
 </div>
 
-<%= render "shared/footer" %>
+<%= render partial: 'shared/footer', :locals => {:articles => @articles} %>
+
 
 </body>
 </html>
