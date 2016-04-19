@@ -164,6 +164,25 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
       <method />
     </configuration>
+    <configuration default="false" name="db:migrate (2)" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="untitled1" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:migrate" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <method />
+    </configuration>
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
@@ -189,6 +208,7 @@
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.2, ruby-2.2.3-p173) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.11.2, ruby-2.2.3-p173) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="byebug (v8.2.2, ruby-2.2.3-p173) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="carrierwave (v0.10.0, ruby-2.2.3-p173) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-rails (v4.1.1, ruby-2.2.3-p173) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-script (v2.4.1, ruby-2.2.3-p173) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-script-source (v1.10.0, ruby-2.2.3-p173) [gem]" level="application" />
@@ -206,6 +226,7 @@
     <orderEntry type="library" scope="PROVIDED" name="method_source (v0.8.2, ruby-2.2.3-p173) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v3.0, ruby-2.2.3-p173) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types-data (v3.2016.0221, ruby-2.2.3-p173) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mini_magick (v4.5.1, ruby-2.2.3-p173) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_portile2 (v2.0.0, ruby-2.2.3-p173) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="minitest (v5.8.4, ruby-2.2.3-p173) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.11.2, ruby-2.2.3-p173) [gem]" level="application" />

@@ -4,7 +4,7 @@
     <div class="footer_box col_w300">
       <h4>Random articles</h4>
       <ul class="footer_menu">
-        <% for article in @articles %>
+        <% for article in @random_articles %>
             <%= render :partial => 'articles/articleRandom', :locals => {:article => article} %>
         <% end %>
       </ul>

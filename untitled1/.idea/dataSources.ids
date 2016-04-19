@@ -49,48 +49,51 @@
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <key id="16" parent="3" name="PRIMARY">
+      <column id="16" parent="3" name="image">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="17" parent="3" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <column id="17" parent="4" name="version">
+      <column id="18" parent="4" name="version">
         <mandatory>1</mandatory>
         <data-type>varchar(255)</data-type>
       </column>
-      <key id="18" parent="4" name="PRIMARY">
+      <key id="19" parent="4" name="PRIMARY">
         <columns>version</columns>
         <primary>1</primary>
       </key>
-      <column id="19" parent="5" name="id">
+      <column id="20" parent="5" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="20" parent="5" name="commenter">
+      <column id="21" parent="5" name="commenter">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="21" parent="5" name="body">
+      <column id="22" parent="5" name="body">
         <data-type>text</data-type>
       </column>
-      <column id="22" parent="5" name="article_id">
+      <column id="23" parent="5" name="article_id">
         <data-type>int(11)</data-type>
       </column>
-      <column id="23" parent="5" name="created_at">
+      <column id="24" parent="5" name="created_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <column id="24" parent="5" name="updated_at">
+      <column id="25" parent="5" name="updated_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <index id="25" parent="5" name="index_comments_on_article_id">
+      <index id="26" parent="5" name="index_comments_on_article_id">
         <columns>article_id</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="26" parent="5" name="PRIMARY">
+      <key id="27" parent="5" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="27" parent="5" name="fk_rails_3bf61a60d3">
+      <foreign-key id="28" parent="5" name="fk_rails_3bf61a60d3">
         <columns>article_id</columns>
         <ref-key>~.articles.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
