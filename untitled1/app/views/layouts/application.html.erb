@@ -76,10 +76,11 @@
 <!-- Wrap Div -->
 <div id="wrap">
 
+  <%= render partial: 'shared/header', :locals => {:comments => @comments} %>
+
   <!-- Container -->
   <div id="cnt">
 
-    <%= render partial: 'shared/header', :locals => {:comments => @comments} %>
 
     <!-- Left Container -->
     <div id="lcnt">

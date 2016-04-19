@@ -1,7 +1,7 @@
 body {
 	background: image-url("footer.jpg") no-repeat center bottom;
 	background-color:#747D82;
-	margin:0px;
+	margin:0;
 	font-family:Verdana;
 	font-size:11px;
 }
@@ -11,7 +11,7 @@ body {
 }
 
 #main {
-	margin:0px auto;
+	margin:0 auto;
 	width:1000px;
 	min-height:1809px;
 }
@@ -24,7 +24,7 @@ body {
 #hdl {
 	width:240px;
 	height:26px;
-	margin:0px 0 0 500px;
+	margin:0 0 0 500px;
 	padding:14px 0 0 0;	
 	float:left;
 }
@@ -47,17 +47,16 @@ body {
 #s {
 	width:180px;
 	background:transparent;
-	border:0px none;
+	border:0 none;
 	font-weight:bold;
 }
 #searchsubmit {
-	border:0px none;
+	border:0 none;
 	margin:0 0 0 3px;
 	width:26px;
 	height:24px;
 	cursor:pointer;
-	padding:0px;
-	margin:0px;
+	padding:0;
 	background:transparent;
 }
 #logo {
@@ -141,7 +140,7 @@ body {
 	text-decoration:underline;
 }
 .pic_lnk img {
-	border:0px none;
+	border:0 none;
 }
 .post p {
 	font-size:12px;
@@ -239,14 +238,14 @@ body {
 	width:110px;
 	height:28px;
 	float:left;
-	padding:78px 0 0 0px;
+	padding:78px 0 0 0;
 	display:block;
 }
 #rcnt h2 {
 	margin:30px 0 15px 20px;
 }
 #rcnt img {
-	border:0px none;
+	border:0 none;
 }
 
 .l_lnk {
@@ -335,7 +334,7 @@ body {
 #foo_d p a {
 	color:#FFF;
 	text-decoration:none;
-	padding:3px 112px 6px 0px;
+	padding:3px 112px 6px 0;
 }
 #foo_d p a:hover {
 	text-decoration:underline;
@@ -405,7 +404,7 @@ body {
 	background-color:#FFF;
 	margin:0 10px 0 0;
 	padding:5px 0 0 5px;
-	border:0px none;
+	border:0 none;
 	height:24px;
 	width:246px;
 }
@@ -420,7 +419,7 @@ body {
 	background-color:#FFF;
 	margin:0 10px 0 0;
 	padding:5px 0 0 5px;
-	border:0px none;
+	border:0 none;
 }
 #cmnt_frm #submit {
 	background-position:0 -560px;
@@ -429,7 +428,7 @@ body {
 	background-color:transparent;
 	color:#FFF;
 	font-weight:bold;
-	padding:0px;
+	padding:0;
 	float:right;
 	margin:0 30px 0 0;
 	cursor:pointer;
