@@ -3,29 +3,28 @@
 
   <!-- Top Menu -->
   <div id="hdl">
-    <a href="#" class="hl">About Us</a>
-    <a href="#" class="hl">Contact Us</a>
-    <a href="#" class="hl">Login</a>
+    <%= link_to "Home", root_path, {class: 'h1'} %>
+    <%= link_to "About Us", root_path, {class: 'h1'} %>
+    <%= link_to "#{admin? ? "Articles" : "Login"}", articles_path %>
   </div>
 
   <!-- Search form -->
   <form id="search_form" method="get" action="">
-    <input class="search_field" type="text" value="Search" onfocus="clS(1);" onblur="clS(0);"  name="s" id="s" />
-    <input class="search_button" type="submit"  value="" id="searchsubmit" />
+    <input class="search_field" type="text" value="Search" onfocus="clS(1);" onblur="clS(0);" name="s" id="s"/>
+    <input class="search_button" type="submit" value="" id="searchsubmit"/>
 
   </form>
 
   <!-- Logo -->
   <div id="logo">
-      <a href="/"></a>
-   </div>
+    <a href="/"></a>
+  </div>
 
   <!-- Main Menu -->
   <div id="menu">
-    <a class="mh" href="#">Home</a>
-    <a class="mt" href="#">Tutuorials</a>
-    <a class="mw" href="#">Wallpapers</a>
-    <a class="mi" href="#">Inspiration</a>
+    <%= link_to "Home", root_path, {class: 'mh'} %>
+    <%= link_to "Tutorials", root_path, {class: 'mt'} %>
+    <%= link_to "Wallpapers", root_path, {class: 'mw'} %>
   </div>
 
 </div>
