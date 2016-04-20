@@ -1,3 +1,1 @@
-<li>
-  <%= link_to "&raquo; <b>#{comment.commenter}</b> : #{comment.body}".html_safe, article_path(comment.article) %>
-</li>
+<%= link_to "<b>#{comment.commenter}</b> : #{comment.body}".html_safe, article_path(comment.article), {class: "pop_posts"} %>

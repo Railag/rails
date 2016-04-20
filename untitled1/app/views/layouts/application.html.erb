@@ -76,7 +76,7 @@
 <!-- Wrap Div -->
 <div id="wrap">
 
-  <%= render partial: 'shared/header', :locals => {:comments => @comments} %>
+  <%= render partial: 'shared/header' %>
 
   <!-- Container -->
   <div id="cnt">
@@ -89,7 +89,7 @@
 
     </div>
 
-    <%= render partial: 'shared/side' %>
+    <%= render partial: 'shared/side', :locals => {:comments => @comments} %>
 
     <br style="clear: both;"/>
   </div>

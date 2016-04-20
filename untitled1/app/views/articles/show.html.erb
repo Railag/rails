@@ -8,13 +8,20 @@
   <%= @article.text %>
 </p>
 
-<p>
-  <strong>Image:</strong>
-  <%= image_tag @article.image.thumb.url %>
-</p>
+<% if @article.image.present? %>
+    <p>
+      <strong>Image:</strong>
+      <%= image_tag @article.image.thumb.url %>
+    </p>
+<% end %>
 
-<h2>Comments</h2>
-<%= render @article.comments %>
+<% if @article.comments.present? %>
+    <h2>Comments</h2>
+    <% for comment in @article.comments %>
+        <%= render :partial => 'comments/articleComment', :locals => {:comment => comment} %>
+    <% end %>
+
+<% end %>
 
 <h2>Add a comment:</h2>
 <%= render 'comments/form' %>
