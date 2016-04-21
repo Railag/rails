@@ -9,6 +9,10 @@
         <% end %>
       </ul>
     </div>
+
+    <h4>
+      <%= link_to "#{admin? ? "Articles" : "Login"}", articles_path %>
+    </h4>
     <!--
         <div class="footer_box col_w160">
           <h4>Authors</h4>

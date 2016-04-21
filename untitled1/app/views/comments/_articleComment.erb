@@ -1,0 +1,17 @@
+<p>
+  <strong>Author:</strong>
+  <%= comment.commenter %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= comment.body %>
+</p>
+
+<p>
+  <%= link_to 'Remove Comment', [comment.article, comment],
+              method: :delete,
+              data: { confirm: 'Are you sure?' } if admin? %>
+</p>
+
+<hr>

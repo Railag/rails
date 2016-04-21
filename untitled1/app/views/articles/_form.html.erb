@@ -19,6 +19,8 @@
       <%= f.text_field :title %>
     </p>
 
+    <br>
+
     <p>
       <%= f.label :text %><br>
       <%= f.text_area :text %>
@@ -27,16 +29,17 @@
     <p>
       <%= f.label :image %><br>
       <%= f.file_field :image %>
-      <% if f.object.image? %>*
+      <% if f.object.image? %>
           <%= image_tag f.object.image.thumb.url %>
-          <br>
-          <%= f.label :remove_image %>
-          <%= f.check_box :remove_image %>
       <% end %>
     </p>
+
+    <br>
 
     <p>
       <%= f.submit %>
     </p>
+
+    <br>
 
 <% end %>
