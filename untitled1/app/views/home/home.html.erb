@@ -1,1 +1,7 @@
-<%= render @articles %>
+<% if @articles.present? %>
+    <%= render @articles %>
+<% else %>
+    <h2>
+      <p>There are no articles containing the term(s) <i><%= params[:search] %> </i>.</p>
+    </h2>
+<% end %>

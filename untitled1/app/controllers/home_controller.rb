@@ -1,5 +1,10 @@
 class HomeController < ApplicationController
   def home
-    @articles = Article.order('created_at desc').last(10)
+    @articles = Article.all
+    if params[:search]
+      @articles = Article.search(params[:search]).order('created_at desc')
+    else
+      @articles = Article.all.order('created_at desc')
+    end
   end
 end

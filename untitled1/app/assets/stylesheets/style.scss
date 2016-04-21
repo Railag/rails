@@ -40,21 +40,22 @@ body {
 	opacity:1;
 	filter:alpha(opacity=100);
 }
-#search_form {
+#search-form {
 	float:left;
-	margin:10px 0 0 4px;
+	margin:14px 0 0 0 !important;
 }
 #s {
 	width:180px;
 	background:transparent;
 	border:0 none;
+    margin-top:12px;
 	font-weight:bold;
 }
 #searchsubmit {
 	border:0 none;
 	margin:0 0 0 3px;
-	width:26px;
-	height:24px;
+	width:30px;
+	height:30px;
 	cursor:pointer;
 	padding:0;
 	background:transparent;

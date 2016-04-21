@@ -7,7 +7,6 @@ class ApplicationController < ActionController::Base
 
   protected
   def fetch_data
-    @comments = Comment.order("created_at desc").last(25)
-    @random_articles = Article.order("RAND()").first(5)
+    @comments = Comment.order('created_at desc').last(25)
   end
 end
