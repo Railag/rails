@@ -3,6 +3,12 @@ class ArticlesController < ApplicationController
 
   def index
     @articles = Article.all
+    send(:test)
+  end
+
+  def send(val1)
+    html = RestClient.get 'https://api.import.io/store/connector/0404192f-d64d-4e97-9ec4-0d317f9cfbb1/_query?input=webpage/url:https%3A%2F%2Fhabrahabr.ru%2F&&_apikey=220169357d384c2a80b6ebea670e270ffaa5a6c2aa410c414c06c642f14e78c3c39de42078a74478f56f4da25d887217743fd38aeaeae1862bc232c2a05f2ca755d362098fbba203a61d636edadab397', {:content_type => :json, :accept => :json}
+    puts(html)
   end
 
   def new
